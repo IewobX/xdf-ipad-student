@@ -1,0 +1,172 @@
+body{
+    background: url("../../img/ipad-exam-background0.png") no-repeat;
+    background-size: 100%;
+}
+/**
+ * @auther xubowei
+ * 横屏
+ */
+
+@media all and (orientation : landscape) {
+    .title{
+        text-align: center;
+        color: #fff;
+        font-size: 36px;
+        margin-top: 5.2734375vh;
+        margin-bottom: 25.13020833333333vh;
+    }
+
+    .exam-message{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    .item_{
+        color: #53b7fe;
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        box-shadow: 10px 5px 10px #dbdbdb;
+        padding: 0 1.6927083333333332vw 0 3.41796875vw;
+    }
+    .item_ p{
+        text-align: right;
+        font-size: 18px;
+        height: 8.333333333333333vh;
+        line-height: 8.333333333333333vh;
+    }
+    .item_ > ul{
+        margin-right: 3vw;
+    }
+    .item_ > ul li{
+        font-size: 24px;
+        padding-left: 4.4921875vw;
+        height: 7.8125vh;
+        line-height: 7.8125vh;
+    }
+    .item_ > ul .exam-type{
+        background: url("../../img/clipboard.png") left center no-repeat;
+
+    }
+    .item_ > ul .exam-teacher{
+        background: url("../../img/user.png") left center no-repeat;
+
+    }
+    .item_ > ul .exam-times{
+        background: url("../../img/clock.png") left center no-repeat;
+
+    }
+    .item_ > ul .question-num{
+        background: url("../../img/flag.png") left center no-repeat;
+
+    }
+    .item_ > div{
+        width: 10.7421875vw;
+        height: 14.322916666666666vh;
+        line-height: 14.322916666666666vh;
+        margin: 0 auto 2.2786458333333332vh;
+        border-radius: 50%;
+        font-size: 23px;
+        text-align: center;
+        color: #fff;
+    }
+    .item_ .start-exam{
+        background: #f47966;
+    }
+    .item_ .start-exam:before{
+        content: '开始考试';
+    }
+    .item_ .answer{
+        background: #5fcbfe;
+    }
+    .item_ .answer:before{
+        content: '查看答案';
+    }
+}
+/**
+ * @author xubowei
+ * 强制横屏
+ */
+@media all and (orientation : portrait){
+    .title{
+        text-align: center;
+        color: #fff;
+        font-size: 36px;
+        margin-top: 5.2734375vw;
+        margin-bottom: 25.13020833333333vw;
+    }
+
+    .exam-message{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    .item_{
+        color: #53b7fe;
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        box-shadow: 10px 5px 10px #dbdbdb;
+        padding: 0 1.6927083333333332vh 0 3.41796875vh;
+    }
+    .item_ p{
+        text-align: right;
+        font-size: 18px;
+        height: 8.333333333333333vw;
+        line-height: 8.333333333333333vw;
+    }
+    .item_ > ul{
+        margin-right: 3vh;
+    }
+    .item_ > ul li{
+        font-size: 24px;
+        padding-left: 4.4921875vh;
+        height: 7.8125vw;
+        line-height: 7.8125vw;
+    }
+    .item_ > ul .exam-type{
+        background: url("../../img/clipboard.png") left center no-repeat;
+
+    }
+    .item_ > ul .exam-teacher{
+        background: url("../../img/user.png") left center no-repeat;
+
+    }
+    .item_ > ul .exam-times{
+        background: url("../../img/clock.png") left center no-repeat;
+
+    }
+    .item_ > ul .question-num{
+        background: url("../../img/flag.png") left center no-repeat;
+
+    }
+    .item_ > div{
+        width: 10.7421875vh;
+        height: 14.322916666666666vw;
+        line-height: 14.322916666666666vw;
+        margin: 0 auto 2.2786458333333332vw;
+        border-radius: 50%;
+        font-size: 23px;
+        text-align: center;
+        color: #fff;
+    }
+    .item_ .start-exam{
+        background: #f47966;
+    }
+    .item_ .start-exam:before{
+        content: '开始考试';
+    }
+    .item_ .answer{
+        background: #5fcbfe;
+    }
+    .item_ .answer:before{
+        content: '查看答案';
+    }
+}
+
+
+
+/**
+ * @author xubowei
+ * overflow 部分滑动  =.=
+ */
