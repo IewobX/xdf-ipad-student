@@ -1,0 +1,149 @@
+body{
+    background: url("../../img/ipad-login-background.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+/**
+ * @auther xubowei
+ * 横屏
+ */
+@media all and (orientation : landscape) {
+    .contain{
+        width: 41.11328125vw;
+        height: 42.70833333333333vh;
+        border-radius: 5px;
+        background: white;
+    }
+    .wrapper{
+        position: absolute;
+        top: 23.828125vh;
+        left: 49.4140625vw;
+    }
+    .content{
+        padding: 3.90625vh 0 0;
+        margin: 0 auto;
+        width: 28.80859375vw;
+    }
+    .title{
+        margin-left: 0.0322265625vw;
+    }
+    .logo{
+        width: 4.8828125vw;
+        height: 6.510416666666667vh;
+    }
+    .title-text{
+        display: inline-block;
+        margin-left: 1.26953125vw;
+    }
+    .Chinese-title{
+        height: 2.734375vh;
+        line-height: 2.734375vh;
+        padding-left: 0.29296875vw;
+        margin-bottom: 1.6927083333333332vh;
+    }
+    .form{
+        margin-top: 2.8645833333333332vh;
+    }
+    .form > input{
+        margin-bottom: 2.34375vh;
+        height: 6.510416666666667vh;
+        line-height: 6.510416666666667vh;
+        width: 22.94921875vw;
+        border: none;
+        border-radius: 5px;
+        padding-left: 5.859375vw;
+        font-size: 18px;
+    }
+    /*.form .user{*/
+        /*background: url("../img/login-user.gif") 0.013671875vw center no-repeat;*/
+    /*}*/
+    /*.form .password{*/
+        /*background: url("../img/login-password.gif") 0.013671875vw center no-repeat;*/
+    /*}*/
+    .form > button{
+        height: 6.901041666666667vh;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        background: #53b7fd;
+        font-size: 18px;
+        color: #fff;
+    }
+}
+
+/**
+ * @author
+ * 强制横屏
+ */
+@media all and (orientation : portrait){
+    .contain{
+        width: 41.11328125vh;
+        height: 42.70833333333333vw;
+        border-radius: 5px;
+        background: white;
+    }
+    .wrapper{
+        position: absolute;
+        top: 23.828125vw;
+        left: 49.4140625vh;
+    }
+    .content{
+        padding: 3.90625vw 0 0;
+        margin: 0 auto;
+        width: 28.80859375vh;
+    }
+    .title{
+        margin-left: 0.0322265625vh;
+    }
+    .logo{
+        width: 4.8828125vh;
+        height: 6.510416666666667vw;
+    }
+    .title-text{
+        display: inline-block;
+        margin-left: 1.26953125vw;
+    }
+    .Chinese-title{
+        height: 2.734375vw;
+        line-height: 2.734375vw;
+        padding-left: 0.29296875vh;
+        margin-bottom: 1.6927083333333332vw;
+    }
+    .form{
+        margin-top: 2.8645833333333332vw;
+    }
+    .form > input{
+        margin-bottom: 2.34375vw;
+        height: 6.510416666666667vw;
+        line-height: 6.510416666666667vw;
+        width: 22.94921875vh;
+        border: none;
+        border-radius: 5px;
+        padding-left: 5.859375vh;
+        font-size: 18px;
+    }
+    /*.form .user{*/
+        /*background: url("../img/login-user.gif") 0.013671875vh center no-repeat;*/
+    /*}*/
+    /*.form .password{*/
+        /*background: url("../img/login-password.gif") 0.013671875vh center no-repeat;*/
+    /*}*/
+    .form > button{
+        height: 6.901041666666667vw;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        background: #53b7fd;
+        font-size: 18px;
+        color: #fff;
+    }
+}
+.English-title{
+    color: #53b7fd;
+}
+.form .user{
+    background: url("../../img/login-user.gif") 14px center no-repeat;
+}
+.form .password{
+    background: url("../../img/login-password.gif") 14px center no-repeat;
+}
