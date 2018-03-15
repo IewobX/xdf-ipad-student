@@ -83,7 +83,7 @@ body{
     .location{
         background: url("../../img/location.png") left center no-repeat;
     }
-    .enter-lesson{
+    .course_state{
         position: absolute;
         top: 29.75260416666667vh;
         left: 50.5625vw;
@@ -97,9 +97,6 @@ body{
         color: #fff;
 
         background: #5dd6fd;
-    }
-    .enter-lesson:before{
-        content: '进入课堂';
     }
 }
 @media all and (orientation : portrait){
@@ -183,7 +180,7 @@ body{
     .location{
         background: url("../../img/location.png") left center no-repeat;
     }
-    .enter-lesson{
+    .course_state{
         position: absolute;
         top: 29.75260416666667vw;
         left: 50.5625vh;
@@ -196,9 +193,23 @@ body{
         text-align: center;
         color: #fff;
 
-        background: #5dd6fd;
     }
-    .enter-lesson:before{
-        content: '进入课堂';
-    }
+}
+.before-lesson{
+    background: #5dd6fd;
+}
+.before-lesson:before{
+    content: '未开始';
+}
+.lessoning{
+    background: #f47966;
+}
+.lessoning:before{
+    content: '进入课堂';
+}
+.after-lesson{
+    background: #606060;
+}
+.after-lesson:before{
+    content: '已结束';
 }

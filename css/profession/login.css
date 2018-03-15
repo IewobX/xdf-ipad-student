@@ -42,7 +42,22 @@ body{
         margin-bottom: 1.6927083333333332vh;
     }
     .form{
+        position: relative;
         margin-top: 2.8645833333333332vh;
+    }
+    .form .message{
+        position: absolute;
+        top: -6.510416666666667vh;
+        left: 0;
+        display: none;
+        width: 100%;
+        height: 6.510416666666667vh;
+        line-height: 6.510416666666667vh;
+        border-radius: 10px;
+        background-color: rgba(0,0,0,0.8);
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: center;
     }
     .form > input{
         margin-bottom: 2.34375vh;
@@ -110,7 +125,22 @@ body{
         margin-bottom: 1.6927083333333332vw;
     }
     .form{
+        position: relative;
         margin-top: 2.8645833333333332vw;
+    }
+    .form .message{
+        position: absolute;
+        top: -6.510416666666667vw;
+        left: 0;
+        display: none;
+        width: 100%;
+        height: 6.510416666666667vw;
+        line-height: 6.510416666666667vw;
+        border-radius: 10px;
+        background-color: rgba(0,0,0,0.8);
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: center;
     }
     .form > input{
         margin-bottom: 2.34375vw;
