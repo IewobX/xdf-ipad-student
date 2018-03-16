@@ -26,7 +26,9 @@
         }
     });
 
-
+    /**
+     * @author xubowei
+     * 监听学生点击开始考试按钮*/
     $('.start-exam').click(function () {
         let paper = $(this).parents('.swiper-slide').data('paper');
         let paper_id = paper.course_paper_id;
@@ -45,6 +47,12 @@
             }
         })
     });
+    /**
+     * @author xubowei
+     * websocket 监听老师是否开始考试*/
+    startWebSocketServer(window.localStorage.course.course_id, "studentCourse");
+
+
     /**
      * @author xubowei
      * 初始化学生试卷列表界面*/
@@ -69,3 +77,6 @@
         return html;
     }
 })();
+function displayMessage(messages) {
+
+}

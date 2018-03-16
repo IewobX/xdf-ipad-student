@@ -52,7 +52,7 @@
     /**
      * @author xubowei
      * websocket 监听老师修改上课状态*/
-
+    //startWebSocketServer($("#courseID").val(), "studentCourse");
 
 
 
@@ -100,3 +100,6 @@
         return html;
     }
 })();
+function displayMessage(messages) {
+
+}
