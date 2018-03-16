@@ -1,5 +1,10 @@
 /**
  * @author xubowei
+ * window.localStorage.studentID                                                                                        学生id
+ * */
+
+/**
+ * @author xubowei
  * 我的课程界面*/
 (function () {
     $.ajax({
@@ -10,14 +15,15 @@
                     alert("提示:您当前没有课程");
                     return;
                 }
-                $('#studentID').data('studentID', result.Msg);
+                // $('#studentID').data('studentID', result.Msg);
+                window.localStorage.studentID = result.Msg;
                 let html = '';
                 for (let i = 0; i < result.Data.length; i++) {
                     let data = result.Data[i];
                     html += renderLesson(i, data);
+                    $('.swiper-wrapper').append($(html));
                     $('.index_' + i).data('course', data);
                 }
-                $('.swiper-wrapper').html(html);
             }
         }
     });
@@ -25,8 +31,11 @@
      * @author xubowei
      * 监听学生点击开始上课按钮*/
     $('.lessoning').click(function () {
-        let courseID = $(this).parents('.swiper-slide').data("course").course_id;
-        let studentID = $('#studentID');
+        let course = $(this).parents('.swiper-slide').data("course");
+        let courseID = course.course_id;
+        let studentID = window.localStorage.studentID;
+
+        window.localStorage.course = course;
         $.ajax({
             url: url + "auth/get/student/course/url/" + courseID + "," + studentID,
             success: function (result) {

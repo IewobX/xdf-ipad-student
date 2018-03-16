@@ -19,6 +19,7 @@
             showErrorMessage(message,"请输入密码");
             return;
         }
+
         $.ajax({                                                                                                        //发起请求
             url: url + 'auth/login/student',
             type: "post",

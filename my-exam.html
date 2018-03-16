@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>我的考试</title>
-
+    <link rel="stylesheet" href="css/common/swiper-4.1.0.min.css">
     <link rel="stylesheet" href="css/profession/common.css"/>
     <link rel="stylesheet" href="css/profession/my-exam.css"/>
 </head>
@@ -12,38 +12,72 @@
     <p>我的考试</p>
 </header>
 <div class="exam-message">
-    <div class="item_">
-        <p class="releaseWay">整卷发布</p>
-        <ul>
-            <li class="exam-type">托福入门测</li>
-            <li class="exam-teacher">发布人:王梅梅</li>
-            <li class="exam-times">考试时长:30min</li>
-            <li class="question-num">共30题</li>
-        </ul>
-        <div class="start-exam"></div>
-    </div>
-    <div class="item_">
-        <p class="releaseWay">整卷发布</p>
-        <ul>
-            <li class="exam-type">托福入门测</li>
-            <li class="exam-teacher">发布人:王梅梅</li>
-            <li class="exam-times">考试时长:30min</li>
-            <li class="question-num">共30题</li>
-        </ul>
-        <div class="start-exam"></div>
-    </div>
-    <div class="item_">
-        <p class="releaseWay">整卷发布</p>
-        <ul>
-            <li class="exam-type">托福入门测</li>
-            <li class="exam-teacher">发布人:王梅梅</li>
-            <li class="exam-times">考试时长:30min</li>
-            <li class="question-num">共30题</li>
-        </ul>
-        <div class="answer"></div>
-    </div>
+    <section class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="item_">
+                    <p class="releaseWay">整卷发布</p>
+                    <ul>
+                        <li class="exam-type">托福入门测</li>
+                        <li class="exam-teacher">发布人:王梅梅</li>
+                        <li class="exam-times">考试时长:30min</li>
+                        <li class="question-num">共30题</li>
+                    </ul>
+                    <div class="start-exam"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item_">
+                    <p class="releaseWay">整卷发布</p>
+                    <ul>
+                        <li class="exam-type">托福入门测</li>
+                        <li class="exam-teacher">发布人:王梅梅</li>
+                        <li class="exam-times">考试时长:30min</li>
+                        <li class="question-num">共30题</li>
+                    </ul>
+                    <div class="start-exam"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item_">
+                    <p class="releaseWay">整卷发布</p>
+                    <ul>
+                        <li class="exam-type">托福入门测</li>
+                        <li class="exam-teacher">发布人:王梅梅</li>
+                        <li class="exam-times">考试时长:30min</li>
+                        <li class="question-num">共30题</li>
+                    </ul>
+                    <div class="start-exam"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item_">
+                    <p class="releaseWay">整卷发布</p>
+                    <ul>
+                        <li class="exam-type">托福入门测</li>
+                        <li class="exam-teacher">发布人:王梅梅</li>
+                        <li class="exam-times">考试时长:30min</li>
+                        <li class="question-num">共30题</li>
+                    </ul>
+                    <div class="start-exam"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+
+
 <script src="js/common/swiper-4.1.0.min.js" type="text/javascript"></script>
 <script src="js/profession/common.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
 </body>
 </html>

@@ -16,12 +16,6 @@ body{
         margin-bottom: 25.13020833333333vh;
     }
 
-    .exam-message{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: stretch;
-    }
     .item_{
         color: #53b7fe;
         border: 1px solid #dbdbdb;
@@ -96,12 +90,12 @@ body{
         margin-bottom: 25.13020833333333vw;
     }
 
-    .exam-message{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: stretch;
-    }
+    /*.exam-message{*/
+        /*display: flex;*/
+        /*flex-flow: row nowrap;*/
+        /*justify-content: space-around;*/
+        /*align-items: stretch;*/
+    /*}*/
     .item_{
         color: #53b7fe;
         border: 1px solid #dbdbdb;
