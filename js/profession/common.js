@@ -1,9 +1,5 @@
 /**
  * @author xubowei
- * 全局url*/
-let url = 'http://localhost:8080/sms/';
-/**
- * @author xubowei
  * 强制横屏
  * */
 let detectOrient = function() {

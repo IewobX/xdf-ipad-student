@@ -2,12 +2,12 @@
  * Created by huangjiaroro on 2017/8/7.
  * 考试时用于接受学生操作动作通知的websocket
  */
-var localUrlPath;
-var webSocketPushMsg = null;
-$(function () {
-    localUrlPath = $("base").attr("href");
-    localUrlPath = localUrlPath.substring(7);
-});
+// var localUrlPath;
+let webSocketPushMsg = null;
+// $(function () {
+//     localUrlPath = window.localStorage.localUrlPath;
+//     localUrlPath = localUrlPath.substring(7);
+// });
 
 //启动websocket 传入courseID和websocket类型，暂时只有一类 excam 表示考试
 function startWebSocketServer(courseID, webSocketGenre) {
@@ -22,7 +22,7 @@ function startWebSocketServer(courseID, webSocketGenre) {
     }
 
     // 创建WebSocket
-    var url = "ws:" + localUrlPath + "websocket?webSocketGenre=" + webSocketGenre + "&courseID=" + courseID;
+    var url = "ws:" + window.localStorage.localUrlPath.substring(7) + "websocket?webSocketGenre=" + webSocketGenre + "&courseID=" + courseID;
     if ('WebSocket' in window) {
         webSocketPushMsg = new WebSocket(url);
     } else if ('MozWebSocket' in window) {
@@ -36,6 +36,7 @@ function startWebSocketServer(courseID, webSocketGenre) {
         console.log("已成功连接到远程服务!")
     };
     webSocketPushMsg.onmessage = function (event) {
+        console.log(event);
         var _messages = event.data;
         var _messages = eval("(" + _messages + ")");
         displayMessage(_messages);
