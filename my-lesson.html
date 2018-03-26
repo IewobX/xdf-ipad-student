@@ -20,9 +20,7 @@
 </header>
 <div class="lesson-message">
     <section class="swiper-container">
-        <div class="swiper-wrapper">
-
-        </div>
+        <div class="swiper-wrapper"></div>
     </section>
 </div>
 
@@ -35,7 +33,9 @@
 
 <script>
     let mySwiper = new Swiper('.swiper-container', {
-        // loop: true,
+        initialSlide :0,
+        observer:true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents:true,//修改swiper的父元素时，自动初始化swiper
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
@@ -50,6 +50,9 @@
         pagination: {
             el: '.swiper-pagination',
         },
+        onClick: function(swiper){
+            alert('你点了Swiper');
+        }
     });
 
 </script>

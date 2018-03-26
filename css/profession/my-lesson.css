@@ -33,7 +33,7 @@ body{
     }
 
     .lesson-content{
-        position: relative;
+        /*position: relative;*/                                                                                         /**/
         margin-top: -8.333333333333333vh;
         height: 56vh;
         width: 100%;
@@ -45,10 +45,10 @@ body{
         color: #52bbfb;
         z-index: -1;
     }
-    .tab{
+    .tab{                                                                                                               /**/
         position: absolute;
-        top: 0;
-        left: 15px;
+        top: 8.333333333333vw;
+        left: 16vw;
         display: inline-block;
         width: 5.6640625vw;
         height: 11.458333333333333vh;
@@ -85,8 +85,8 @@ body{
     }
     .course_state{
         position: absolute;
-        top: 29.75260416666667vh;
-        left: 50.5625vw;
+        top: 42vh;
+        left: 63vw;
         display: inline-block;
         width: 14.6484375vw;
         height: 19.53125vh;
@@ -130,7 +130,7 @@ body{
     }
 
     .lesson-content{
-        position: relative;
+        /*position: relative;*/
         margin-top: -8.333333333333333vw;
         height: 56vw;
         width: 100%;
@@ -144,8 +144,8 @@ body{
     }
     .tab{
         position: absolute;
-        top: 0;
-        left: 15px;
+        top: 8.3333333333333333333vh;
+        left: 16vh;
         display: inline-block;
         width: 5.6640625vh;
         height: 11.458333333333333vw;
@@ -182,8 +182,8 @@ body{
     }
     .course_state{
         position: absolute;
-        top: 29.75260416666667vw;
-        left: 50.5625vh;
+        top: 42vw;
+        left: 63vh;
         display: inline-block;
         width: 14.6484375vh;
         height: 19.53125vw;

@@ -14,64 +14,69 @@
 <div class="exam-message">
     <section class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="item_">
-                    <p class="releaseWay">整卷发布</p>
-                    <ul>
-                        <li class="exam-type">托福入门测</li>
-                        <li class="exam-teacher">发布人:王梅梅</li>
-                        <li class="exam-times">考试时长:30min</li>
-                        <li class="question-num">共30题</li>
-                    </ul>
-                    <div class="start-exam"></div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="item_">
-                    <p class="releaseWay">整卷发布</p>
-                    <ul>
-                        <li class="exam-type">托福入门测</li>
-                        <li class="exam-teacher">发布人:王梅梅</li>
-                        <li class="exam-times">考试时长:30min</li>
-                        <li class="question-num">共30题</li>
-                    </ul>
-                    <div class="start-exam"></div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="item_">
-                    <p class="releaseWay">整卷发布</p>
-                    <ul>
-                        <li class="exam-type">托福入门测</li>
-                        <li class="exam-teacher">发布人:王梅梅</li>
-                        <li class="exam-times">考试时长:30min</li>
-                        <li class="question-num">共30题</li>
-                    </ul>
-                    <div class="start-exam"></div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="item_">
-                    <p class="releaseWay">整卷发布</p>
-                    <ul>
-                        <li class="exam-type">托福入门测</li>
-                        <li class="exam-teacher">发布人:王梅梅</li>
-                        <li class="exam-times">考试时长:30min</li>
-                        <li class="question-num">共30题</li>
-                    </ul>
-                    <div class="start-exam"></div>
-                </div>
-            </div>
+            <!--<div class="swiper-slide">-->
+                <!--<div class="item_">-->
+                    <!--<p class="releaseWay">整卷发布</p>-->
+                    <!--<ul>-->
+                        <!--<li class="exam-type">托福入门测</li>-->
+                        <!--<li class="exam-teacher">发布人:王梅梅</li>-->
+                        <!--<li class="exam-times">考试时长:30min</li>-->
+                        <!--<li class="question-num">共30题</li>-->
+                    <!--</ul>-->
+                    <!--<div class="start-exam"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="swiper-slide">-->
+                <!--<div class="item_">-->
+                    <!--<p class="releaseWay">整卷发布</p>-->
+                    <!--<ul>-->
+                        <!--<li class="exam-type">托福入门测</li>-->
+                        <!--<li class="exam-teacher">发布人:王梅梅</li>-->
+                        <!--<li class="exam-times">考试时长:30min</li>-->
+                        <!--<li class="question-num">共30题</li>-->
+                    <!--</ul>-->
+                    <!--<div class="start-exam"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="swiper-slide">-->
+                <!--<div class="item_">-->
+                    <!--<p class="releaseWay">整卷发布</p>-->
+                    <!--<ul>-->
+                        <!--<li class="exam-type">托福入门测</li>-->
+                        <!--<li class="exam-teacher">发布人:王梅梅</li>-->
+                        <!--<li class="exam-times">考试时长:30min</li>-->
+                        <!--<li class="question-num">共30题</li>-->
+                    <!--</ul>-->
+                    <!--<div class="start-exam"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="swiper-slide">-->
+                <!--<div class="item_">-->
+                    <!--<p class="releaseWay">整卷发布</p>-->
+                    <!--<ul>-->
+                        <!--<li class="exam-type">托福入门测</li>-->
+                        <!--<li class="exam-teacher">发布人:王梅梅</li>-->
+                        <!--<li class="exam-times">考试时长:30min</li>-->
+                        <!--<li class="question-num">共30题</li>-->
+                    <!--</ul>-->
+                    <!--<div class="start-exam"></div>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
     </section>
 </div>
 
-
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/common/swiper-4.1.0.min.js" type="text/javascript"></script>
+<script src="js/profession/webSocket.js"></script>
 <script src="js/profession/common.js"></script>
+<script src="js/profession/my-exam.js"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
+    let swiper = new Swiper('.swiper-container', {
+        initialSlide :0,
+        observer:true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents:true,//修改swiper的父元素时，自动初始化swiper
+        slidesPerView: 1,
         spaceBetween: 30,
         pagination: {
             el: '.swiper-pagination',

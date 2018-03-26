@@ -35,8 +35,9 @@
                     }
                     // $('#studentID').data('studentID', result.Msg);
                     window.localStorage.studentID = result.Msg;
-                    let html = '';
+
                     for (let i = 0; i < result.Data.length; i++) {
+                        let html = '';
                         let data = result.Data[i];
                         html += renderLesson(i, data);
                         $('.swiper-wrapper').append($(html));
@@ -50,37 +51,12 @@
     /**
      * @author xubowei
      * 监听学生点击开始上课按钮*/
-    // function joinInClass() {
-    //     console.log($('.lessoning'));
-
-        // $('body').on('click','.item_ .lessoning',function () {
-        //     alert(0);
-        // });
-        // $('.lessoning').click(function () {
-        //     let course = $(this).parents('.swiper-slide').data("course");
-        //     let courseID = course.course_id;
-        //     let studentID = window.localStorage.studentID;
-        //
-        //     window.localStorage.course = course;
-        //     $.ajax({
-        //         url: url + "auth/get/student/course/url/" + courseID + "," + studentID,
-        //         success: function (result) {
-        //             if (!result.isSuccess) {
-        //                 alert('提示:' + result.Msg);
-        //                 return;
-        //             }
-        //             let newTab = window.open('about:blank');
-        //             newTab.location.href = result.Data;
-        //         }
-        //     });
-        // });
-    // }
-    $('body').on('click','.item_',function () {
+    $('body').on('click','.lessoning',function () {
         let course = $(this).parents('.swiper-slide').data("course");
         let courseID = course.course_id;
         let studentID = window.localStorage.studentID;
 
-        window.localStorage.course = course;
+        window.localStorage.course = JSON.stringify(course);
         $.ajax({
             url: url + "auth/get/student/course/url/" + courseID + "," + studentID,
             async: false,
@@ -89,17 +65,10 @@
                     alert('提示:' + result.Msg);
                     return;
                 }
-                console.log(result.Data);
-                // let newTab = window.open('about:blank');
-                // newTab.location.href = result.Data;
+                window.location.href = window.localStorage.localUrlPath + result.Data;
             }
         });
     });
-
-
-
-
-
 
     /**
      * @author xubowei
